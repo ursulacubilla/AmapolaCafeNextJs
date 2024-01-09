@@ -1,3 +1,4 @@
+import Contactanos from './components/Contactanos'
 import Menu from './components/Menu'
 import NuestrasCreaciones from './components/NuestrasCreaciones'
 import SobreNosotros from './components/SobreNosotros'
@@ -9,6 +10,7 @@ export default function Home() {
       <Menu />
       <NuestrasCreaciones />
       <SobreNosotros />
+      <Contactanos />
     </main>
   )
 }
