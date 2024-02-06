@@ -2,6 +2,9 @@ import Link from "next/link";
 import FormReservaMesa from "./FormReservaMesa";
 
 const Contactanos = () => {
+   
+
+
     return(
         <>
         <h2 className='text-4xl font-semibold text-[#c57b57] pb-5 pt-20'>¡Contactanos y Reserva tu Mesa!</h2>
@@ -23,16 +26,6 @@ const Contactanos = () => {
         <FormReservaMesa />
         </div>
 
-        <div>
-        <h2 className='text-2xl font-semibold text-[#c57b57] text-center tracking-wide pt-8 mb-5'>Solo quieres reservar un pastel de cumpleaños?</h2>
-    
-        <div className="text-center">
-        <button className="mt-[30px] w-[200px] h-[40px] bg-[#f1ab86] border border-[#c57b57] rounded font-[15px] mb-[30px]">
-        <Link href={'../reservaPastel'}>Click Aqui</Link>
-        </button>
-        </div>
-    
-        </div>
         </>
     )
 }

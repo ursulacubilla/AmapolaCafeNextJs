@@ -1,8 +1,17 @@
+'use client'
+import { useFormState } from 'react-dom'
+import { testService } from './testService'
+import { useState } from 'react'
 
 const FormReservaMesa = () => {
+     const initialState = {
+        message: null
+      }
+      const [state, formAction] = useFormState(testService, initialState)
+
     return (
         <div className="mt-[70px] content-center">
-            <form className="w-[500px] sm:w-[500px] md:w-[500px] m-auto">
+            <form className="w-[500px] sm:w-[500px] md:w-[500px] m-auto" action={formAction}>
                 <label htmlFor="nombre" className="mt-5">Nombre:</label>
                 <input id="nombre" type="text" required name="nombre" className="shadow appearance-none border border-[#c57b57] rounded w-[500px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-[15px] lg:w-[500px]" placeholder="Nombre"/>
 
